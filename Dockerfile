@@ -1,5 +1,4 @@
-FROM node:18.20.8-bookworm-slim
-COPY graphserver.js .
+FROM node:25.9.0-bookworm-slim
 COPY package.json .
 COPY UScities.json .
 RUN npm install &&\
